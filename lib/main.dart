@@ -37,6 +37,17 @@ class MyApp extends StatelessWidget {
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
         MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
       },
+      /* onGenerateRoute: (settings) {
+        print(settings.arguments);
+        return MaterialPageRoute(
+          builder: (ctx) => CategoriesScreen(),
+        );
+      }, */ //WHERE I GO FOR EVERY NON REGISTERED ROUTE
+      /* onUnknownRoute: (settings) {
+        return MaterialPageRoute(
+          builder: (ctx) => CategoriesScreen(),
+        );
+      }, */ //WHERE FLUTTER LOOKS AS LAST CHANCE IF IT CAN'T FOUND THE PAGE, USUALLY 404
     );
   }
 }
